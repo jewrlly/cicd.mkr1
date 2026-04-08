@@ -23,3 +23,9 @@ def count_sentences(text):
             i += 1
 
     return count
+
+def analyze_file(filepath):
+    text = read_file(filepath)
+    words = count_words(text)
+    sentences = count_sentences(text)
+    return words, sentences
