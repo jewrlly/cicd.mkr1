@@ -28,7 +28,7 @@ def analyze_file(filepath):
     text = read_file(filepath)
     words = count_words(text)
     sentences = count_sentences(text)
-    return words, sentencesg
+    return words, sentences
 
 if __name__ == "__main__":
     filepath = input("Введіть шлях до файлу: ")

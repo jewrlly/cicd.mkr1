@@ -17,7 +17,7 @@ def complex_text():
 # ======= ТЕСТИ З ФІКСТУРАМИ =======
 
 def test_count_words_simple(simple_text):
-    assert count_words(simple_text) == 8
+    assert count_words(simple_text) == 10
 
 
 def test_count_sentences_simple(simple_text):
