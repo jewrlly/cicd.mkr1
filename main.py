@@ -8,3 +8,18 @@ def count_words(text):
         text = text.replace(sep, " ")
     words = [w for w in text.split(" ") if w.strip()]
     return len(words)
+
+def count_sentences(text):
+    count = 0
+    i = 0
+    while i < len(text):
+        if text[i:i+3] == "...":
+            count += 1
+            i += 3
+        elif text[i] in ".!?":
+            count += 1
+            i += 1
+        else:
+            i += 1
+
+    return count
